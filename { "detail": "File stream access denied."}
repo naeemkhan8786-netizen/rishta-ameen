@@ -1,43 +1,151 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+<!doctype html>
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>رشتہ امین میرج بیورو</title>
+  <meta name="description" content="رشتہ امین — لاہور سے پورے پاکستان تک معتبر میرج بیورو" />
+  <style>
+    /* Simple, self-contained responsive CSS */
+    :root{--bg:#ffffff;--accent:#0b5ba8;--muted:#666;--card:#f7fbff}
+    body{font-family: 'Noto Nastaliq Urdu', 'Segoe UI', Tahoma, sans-serif; background:var(--bg);color:#111;margin:0;padding:0;line-height:1.5}
+    .container{max-width:1000px;margin:18px auto;padding:18px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:70px;height:70px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#27a);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    h1{font-size:22px;margin:0}
+    p.lead{color:var(--muted);margin:6px 0 0}
+    nav{display:flex;gap:8px}
+    a.btn{background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600}
+    main{margin-top:18px;display:grid;grid-template-columns:1fr 360px;gap:18px}
+    .card{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 6px 18px rgba(11,91,168,0.08)}
+    .hero h2{margin:0 0 8px;font-size:18px}
+    .features{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+    .feature{display:flex;gap:10px;align-items:flex-start}
+    .feature .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);margin-top:6px}
+    form{display:flex;flex-direction:column;gap:10px}
+    label{font-size:13px;color:var(--muted)}
+    input[type="text"],input[type="tel"],input[type="email"],select,textarea{padding:10px;border-radius:8px;border:1px solid #e3e7ee;font-size:15px}
+    textarea{min-height:100px}
+    .row{display:flex;gap:8px}
+    .small{font-size:13px;color:var(--muted)}
+    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+    .whatsapp{background:#25D366;color:#fff;padding:10px;border-radius:10px;display:inline-block;text-decoration:none}
+    @media(max-width:900px){main{grid-template-columns:1fr} .brand h1{font-size:18px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">امین</div>
+        <div>
+          <h1>رشتہ امین میرج بیورو</h1>
+          <p class="lead">Samanabad, Orange Line Station, Multan Road, Lahore</p>
+        </div>
+      </div>
+      <nav>
+        <a class="btn" href="#register">رابطہ کریں</a>
+        <a class="btn" href="#services">خدمات</a>
+      </nav>
+    </header><main>
+  <section>
+    <div class="card hero">
+      <h2>خلوص، اعتماد اور رازداری کے ساتھ رشتہ سازی</h2>
+      <p class="small">ہم خاندانوں کو باوقار، مسنون اور موزوں رشتے فراہم کرتے ہیں — لاہور سے پورے پاکستان اور بیرونِ ملک تک۔</p>
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+      <div class="features">
+        <div class="feature"><div class="dot"></div><div><strong>پرائیویسی</strong> — تمام پروفائل مکمل رازداری میں رکھے جاتے ہیں۔</div></div>
+        <div class="feature"><div class="dot"></div><div><strong>خاندانی نیٹ ورک</strong> — قریبی روابط اور معتبر حوالہ جات کی بنیاد پر میچنگ۔</div></div>
+        <div class="feature"><div class="dot"></div><div><strong>آن لائن میچنگ</strong> — WhatsApp، Facebook اور Zoom ملاقاتیں۔</div></div>
+      </div>
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+      <div style="margin-top:12px">
+        <a class="whatsapp" href="https://wa.me/923328441184?text=Assalamualaikum%20I%20want%20to%20register%20with%20Rishta%20Ameen%20Marriage%20Bureau" target="_blank">WhatsApp پر رابطہ کریں</a>
+      </div>
+    </div>
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+    <div class="card" style="margin-top:12px">
+      <h3 style="margin:0 0 8px">کیسے شروع کریں؟</h3>
+      <ol class="small" style="padding-left:18px;margin:0">
+        <li>ذیل والے فارم کو مکمل کریں یا ہمیں WhatsApp پر پیغام بھیجیں۔</li>
+        <li>ہم آپ سے مختصر فون ملاقات یا آن لائن کال کریں گے۔</li>
+        <li>مطابقت کی بنیاد پر موزوں پروفائلز بھیجے جائیں گے۔</li>
+      </ol>
+    </div>
 
-jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload entire repository
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+    <div id="services" class="card" style="margin-top:12px">
+      <h3 style="margin:0 0 8px">خدمات</h3>
+      <ul class="small" style="margin:0;padding-left:18px">
+        <li>پروفائل رجسٹریشن اور مکمل میچنگ</li>
+        <li>خاندانی مشاورت اور سفید رشتہ</li>
+        <li>بیرونِ ملک رشتوں کا خصوصی سیکشن</li>
+        <li>ازدواجی رہنمائی اور مشاورت</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <aside>
+    <div id="register" class="card">
+      <h3 style="margin:0 0 8px">رجسٹریشن فارم</h3>
+      <form id="rishtaForm" onsubmit="handleSubmit(event)">
+        <label>نام</label>
+        <input type="text" name="name" placeholder="مثلاً: فاطمہ خان" required>
+
+        <label>ولدیت / والد کا نام</label>
+        <input type="text" name="father" placeholder="مثلاً: رقیہ بی بی">
+
+        <label>تاریخ پیدائش</label>
+        <input type="text" name="dob" placeholder="YYYY-MM-DD" required>
+
+        <label>شہرت / شہر</label>
+        <input type="text" name="city" placeholder="لاہور" required>
+
+        <label>رابطہ نمبر (WhatsApp)</label>
+        <input type="tel" name="phone" placeholder="03" required>
+
+        <label>تعلیم</label>
+        <input type="text" name="education" placeholder="مثلاً: بی اے">
+
+        <label>مطلوبہ رشتہ (مختصر)</label>
+        <input type="text" name="requirements" placeholder="مثلاً: شادی، منگنی، وغیرہ">
+
+        <label>مزید معلومات</label>
+        <textarea name="notes" placeholder="مزید تفصیلات اگر ہوں تو لکھیں"></textarea>
+
+        <div class="row"><button type="submit" class="btn">پروفائل بھیجیں</button></div>
+        <p class="small">فارم جمع ہوتے ہی ہم جلد آپ سے رابطہ کریں گے۔</p>
+      </form>
+    </div>
+
+    <div class="card" style="margin-top:12px">
+      <h4 style="margin:0 0 8px">دفتر</h4>
+      <p class="small">Address: Samanabad, Orange Line Station, Multan Road, Lahore<br>Matchmaker Manager: Naeem Khan<br>Client Relationship Manager: Miss Batool</p>
+      <p class="small">وقتِ کار: 10:00 AM — 8:00 PM</p>
+    </div>
+  </aside>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> رشتہ امین میرج بیورو — تمام حقوق محفوظ</p>
+</footer>
+
+  </div>  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleSubmit(e){
+      e.preventDefault();
+      const form = e.target;
+      const data = Object.fromEntries(new FormData(form));
+      // Simple client-side handling: open WhatsApp with prefilled message (user can change number in href)
+      const waNumber = '923328441184'; // <-- replace with your WhatsApp number (country code + number)
+      const text = `Name: ${data.name}%0AFather: ${data.father || ''}%0ADOB: ${data.dob}%0ACity: ${data.city}%0APhone: ${data.phone}%0AEducation: ${data.education || ''}%0AReq: ${data.requirements || ''}%0ANotes: ${data.notes || ''}`;
+      const href = `https://wa.me/${waNumber.replace(/[^0-9]/g,'')}?text=${encodeURIComponent(text)}`;
+      window.open(href,'_blank');
+      alert('آپ کا پیغام WhatsApp پر کھل جائے گا۔ براہِ کرم بھیج دیں — ہم جلد رابطہ کریں گے۔');
+      form.reset();
+    }
+  </script></body>
+</html>
